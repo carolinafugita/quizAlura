@@ -1,4 +1,6 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
+import React from 'react';
 import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
@@ -29,7 +31,10 @@ const theme = db.theme;
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <><Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet"></link>
+      </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />

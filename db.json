@@ -1,28 +1,55 @@
 {
-    "bg": "https://img.nbc.com/sites/nbcunbc/files/scet/photos/22/1217/006.jpg?impolicy=nbc_com&imwidth=1080&imdensity=1",
+    "bg": "https://img.nbc.com/sites/nbcunbc/files/scet/photos/22/1217/006.jpg?impolicy=nbc_com&imwidth=1080&imdensity=1" ,
+    "bgQuiz" : "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F04%2F03%2Fzoom-4.jpg",
     "title": "Quiz The Office",
     "description": "Teste os seus conhecimentos sobre a série!",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "title": "Pergunta 1",
+        "description": "Desc 1",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "alt 1",
+          "alt2",
+          "alt3",
+          "alt4"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
-        "answer": 0,
+        "title": "Pergunta 2",
+        "description": "Desc 2",
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "alt 1",
+          "alt2",
+          "alt3",
+          "alt4"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Pergunta 3",
+        "description": "Desc 3",
+        "answer": 2,
+        "alternatives": [
+          "alt 1",
+          "alt2",
+          "alt3",
+          "alt4"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Pergunta 4",
+        "description": "Desc 4",
+        "answer": 2,
+        "alternatives": [
+          "alt 1",
+          "alt2",
+          "alt3",
+          "alt4"
         ]
       }
     ],
