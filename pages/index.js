@@ -8,6 +8,8 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Input from '../src/components/Input'
+import Button from '../src/components/Button'
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -32,6 +34,15 @@ export default function Home () {
   const router = useRouter ();
   const [name,setName] = React.useState ('');
 
+  function pagQuiz (e) { 
+    e.preventDefault ();
+    router.push( '/quiz' )
+  }
+
+  function pegarNome (e) {
+    setName( e.target.value ); 
+  }
+
   return (
 
     <QuizBackground backgroundImage={db.bg}>
@@ -49,19 +60,14 @@ export default function Home () {
 
           <Widget.Content>
             <p>{db.description}</p>
-            <form onSubmit = { function pag (e) { 
-              e.preventDefault ();
-              router.push( '/quiz' )
-              } }>  
-              <input
-                onChange = { function pegarNome (e) {
-                  setName( e.target.value ); 
-                } }
+            <form onSubmit = { pagQuiz }>  
+              <Input
+                onChange = { pegarNome }
                 placeholder = "Nome"
               />
-              <button type = "submit" disabled = { name.length === 0 }>
+              <Button type = "submit" disabled = { name.length === 0 }>
                 Jogar
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

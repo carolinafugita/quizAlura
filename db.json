@@ -24,8 +24,7 @@
         "alternatives": [
           "alt 1",
           "alt2",
-          "alt3",
-          "alt4"
+          "alt3"
         ]
       },
       {
@@ -60,7 +59,7 @@
       "colors": {
         "textheader" : "#E9ECED",
         "primary": "#0C2F57",
-        "secondary": "#EDED74",
+        "secondary": "#FFC300",
         "mainBg": "#DCDBD9",
         "contrastText": "#4A4948",
         "wrong": "#FF5722",
