@@ -1,11 +1,9 @@
 {
-    "bg": "https://img.nbc.com/sites/nbcunbc/files/scet/photos/22/1217/006.jpg?impolicy=nbc_com&imwidth=1080&imdensity=1" ,
-    "bgQuiz" : "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2020%2F04%2F03%2Fzoom-4.jpg",
-    "title": "Quiz The Office",
+    "bg": "https://64.media.tumblr.com/c0328a242fcb326dfb5b7908f23e8eeb/4594d519360e77b2-5b/s640x960/1ee70e007cebafd3d34f08dcb75780068004e98c.png" ,    "title": "Quiz The Office",
     "description": "Teste os seus conhecimentos sobre a série!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://64.media.tumblr.com/227e1f0ca12befa5acb5c52dc5be53cb/7e00f2103745ee7d-8d/s400x600/58bc87b180882f629b9c38814e13c388dacec993.gif",
         "title": "Pergunta 1",
         "description": "Desc 1",
         "answer": 2,
@@ -57,13 +55,13 @@
     ],
     "theme": {
       "colors": {
-        "textheader" : "#E9ECED",
-        "primary": "#0C2F57",
-        "secondary": "#FFC300",
-        "mainBg": "#DCDBD9",
-        "contrastText": "#4A4948",
-        "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "textheader" : "#403B3B",
+        "primary": "#F7F7F2",
+        "secondary": "#CDCD0A",
+        "mainBg": "#060606",
+        "contrastText": "#F0ECEC",
+        "wrong": "#C10F0D",
+        "success": "#11A718"
       },
       "borderRadius": "4px"
     }
