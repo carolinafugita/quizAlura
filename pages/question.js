@@ -44,7 +44,7 @@ function Question (props) {
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '175px',
           objectFit: 'cover',
         }}
         src={question.image}

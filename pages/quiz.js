@@ -10,49 +10,33 @@ import GitHubCorner from '../src/components/GitHubCorner'
 import Question from './question'
 
 const qtdQuestions = db.questions.length;
-const mensagemResultado = [
-  {
-    img : "https://i.pinimg.com/originals/74/f7/70/74f770284500fc194576c438105ef26f.gif",
-    mensagem : "[mensagem no final do jogo]"
-  },
-  {
-    img : "https://media3.giphy.com/media/5vef4sn8zhnlC/source.gif",
-    mensagem : "[mensagem no final do jogo]"
-  },
-  {
-    img : "https://i.pinimg.com/originals/e6/7a/e7/e67ae7d3704d841a09465e092f3fbfcf.gif",
-    mensagem : "[mensagem no final do jogo]"
-  },
-  {
-    img : "https://64.media.tumblr.com/e201fbaa3850eb89f3989c20f600521b/tumblr_n5dsa603841tbukr2o1_250.gif",
-    mensagem : "[mensagem no final do jogo]"
-  },
-]
+const mensagemResultado = db.mensagemResultado;
 
 function FimQuiz (props) {
 
   const endPercentage = props.acertos / qtdQuestions;
-  const resultado = mensagemPontuacao(endPercentage);
+  const resultado = mensagemResultado[Math.floor(endPercentage*10)];
 
   return(
     <Widget>
       <Widget.Header>
-        <h1>Você acertou {endPercentage*100}% das perguntas!</h1>
+        <h1>Você acertou {(endPercentage*100).toFixed(0)}% das perguntas!</h1>
       </Widget.Header>
 
       <img
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '175px',
           objectFit: 'cover',
         }}
-        src={resultado.img}
+        src={resultado}
       />
 
       <Widget.Content>
-      <p>{resultado.mensagem}</p>
+
       </Widget.Content>
+
     </Widget>
   )
 }
@@ -96,18 +80,3 @@ export default function QuizPage () {
     );
 }
 
-function mensagemPontuacao (pontuacao){
-
-    if( pontuacao >= 0.75 ){
-      return mensagemResultado[0]; 
-    }
-    else if( pontuacao >= 0.5 ){
-      return mensagemResultado[1]; 
-    }
-    else if( pontuacao >= 0.25 ){
-      return mensagemResultado[2]; 
-    }
-    else{
-      return mensagemResultado[3]; 
-    }
-}

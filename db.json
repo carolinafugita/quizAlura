@@ -1,52 +1,197 @@
 {
-    "bg": "https://64.media.tumblr.com/c0328a242fcb326dfb5b7908f23e8eeb/4594d519360e77b2-5b/s640x960/1ee70e007cebafd3d34f08dcb75780068004e98c.png" ,    "title": "Quiz The Office",
+    "bg": "https://64.media.tumblr.com/18b24dc9d6677fc92318a8b74851edcc/6d6eceb3f047ff1d-2d/s2048x3072/29651a9c7c257d96644b4e1fb4c39a8018713fa9.png" ,    "title": "Quiz The Office",
     "description": "Teste os seus conhecimentos sobre a série!",
     "questions": [
       {
         "image": "https://64.media.tumblr.com/227e1f0ca12befa5acb5c52dc5be53cb/7e00f2103745ee7d-8d/s400x600/58bc87b180882f629b9c38814e13c388dacec993.gif",
-        "title": "Pergunta 1",
-        "description": "Desc 1",
+        "title": "Na primeira temporada, Pam ganhou um prêmio Dundie por:",
+        "description": "",
         "answer": 2,
         "alternatives": [
-          "alt 1",
-          "alt2",
-          "alt3",
-          "alt4"
+          "Post-it's mais coloridos",
+          "Melhor ruiva",
+          "Tênis mais brancos",
+          "Noivado mais longo"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/ea91594e2e0d5289eb40e85165e20f47/68187baadebf40be-07/s540x810/0459efec3a35883723a268f179d5a99754d1c80f.gif",
+        "title": "Por quantos minutos Michael trabalhou na Dunder Mifflin?",
+        "description": "Lembra da música?",
+        "answer": 1,
+        "alternatives": [
+          "8.540.000",
+          "9.886.000",
+          "10.500.000",
+          "8.970.000"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/da4513109e9fdd9800e2e48486e32363/1a917e42c393ac59-1a/s540x810/ec902bef7bf8101a5ca18e4cd5a8628a6415bb35.gif",
+        "title": "O dia preferido do Stanley é o dia dos:",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Cookies",
+          "Cupcakes",
+          "Donuts",
+          "Pretzels"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7c5c5df000c4aa2b8f46f46bb59624a0/6a37f2c20ba5f38f-0c/s250x400/6fe254952180fb9b3146021c4c08269e95b92048.gif",
+        "title": "Michael e Holly fizeram uma paródia de qual desses filmes?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Quem Quer Ser Um Milionário?",
+          "O Poderoso Chefão",
+          "Titanic",
+          "127 Horas"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/ee6ed14af383b7ff04fd7019633f12e0/tumblr_njlcjmvyuE1qg9pglo8_r1_250.gif",
+        "title": "Qual foi a resolução de ano novo do Creed em 2011?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+          "Tomar menos café",
+          "Fazer uma estrelinha",
+          "Passar fio dental",
+          "Fazer uma manobra de skate"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/a0ecf372eb83708c066882f7208d8e48/tumblr_mxezr6qN7F1skg82io3_r2_250.gifv",
+        "title": "Toby resolveu se mudar para fora do país e lá acabou quebrando o pescoço numa tirolesa. Para onde ele foi?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Chile",
+          "Jamaica",
+          "Argentina",
+          "Costa Rica"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/191bba0ddf9cf12e51da55fe92824cb9/tumblr_pmqa0mIh5X1r4v3o5o3_400.gif",
+        "title": "Em uma palestra para a turma de faculdade do Ryan, Michael listou quais são, segundo ele, todos os setores de negócios. Qual desses não está em sua lista?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Ferrovias",
+          "Alimentação",
+          "Hospitais",
+          "Entretenimento"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/3fcdeea68d48ef6ab4e515eb8d72f3ea/060e37456e4b05e4-9b/s540x810/9c6539ed01ac75b5c25b58b6933f2a3886d652ec.gif",
+        "title": "Qual é o sobrenome da Angela?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Martin",
+          "Wright",
+          "Kinsey",
+          "Campbell"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Pergunta 2",
-        "description": "Desc 2",
+        "title": "Quem acertou a última pergunta no jogo de trivia contra o time do Oscar?",
+        "description": "",
         "answer": 2,
         "alternatives": [
-          "alt 1",
-          "alt2",
-          "alt3"
+          "Erin",
+          "Meredith",
+          "Kevin",
+          "Kelly"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Pergunta 3",
-        "description": "Desc 3",
-        "answer": 2,
+        "image": "https://64.media.tumblr.com/186a781f655545e266183ebf1ad8c8d1/953e1fb2df3b6b8d-de/s400x600/9b0b459c8dfd6c496e325313ef9944cefa31de75.gif",
+        "title": "Onde Jim quase pediu Pam em casamento, mas acabou não o fazendo?",
+        "description": "",
+        "answer": 0,
         "alternatives": [
-          "alt 1",
-          "alt2",
-          "alt3",
-          "alt4"
+          "Estacionamento do prédio",
+          "Chilli's",
+          "Sala de reunião",
+          "Posto de gasolina"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Pergunta 4",
-        "description": "Desc 4",
+        "image": "https://64.media.tumblr.com/0706aa65b856536dcd518b4374e9b732/718586c41903919f-1e/s540x810/6c5080cb7887373a9de423d9f30d5efb487355b3.gif",
+        "title": "Qual é o nome de Sensei de Dwight?",
+        "description": "",
         "answer": 2,
         "alternatives": [
-          "alt 1",
-          "alt2",
-          "alt3",
-          "alt4"
+          "Mr. Miyagi",
+          "Stuart",
+          "Ira",
+          "George"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7cc603d4f37cb97809897ed96d37e592/tumblr_pj107bGZeG1r3ykuvo2_540.gif",
+        "title": "Onde Ryan estava trabalhando quando Michael o convidou para fazer parte de sua própria empresa?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+          "Supermercado",
+          "Restaurante",
+          "Boliche",
+          "Loja de sapatos"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7cc603d4f37cb97809897ed96d37e592/tumblr_pj107bGZeG1r3ykuvo2_540.gif",
+        "title": "Quando Michael tentou fugir por causa de problemas financeiros, quem o resgatou?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "Jan",
+          "Pam",
+          "Dwight",
+          "Andy"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7cc603d4f37cb97809897ed96d37e592/tumblr_pj107bGZeG1r3ykuvo2_540.gif",
+        "title": "Qual parte do corpo Michael queimou em seu George Foreman Grill?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+          "Mão",
+          "Joelho",
+          "Pé",
+          "Cotovelo"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7cc603d4f37cb97809897ed96d37e592/tumblr_pj107bGZeG1r3ykuvo2_540.gif",
+        "title": "O escritório se dividiu ao debater se uma determinada atriz é ou não sensual. Quem é essa atriz?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+          "Julia Roberts",
+          "Hillary Swank",
+          "Scarlett Johansson",
+          "Sarah Jessica Parker"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/7cc603d4f37cb97809897ed96d37e592/tumblr_pj107bGZeG1r3ykuvo2_540.gif",
+        "title": "Kevin e Oscar inventaram um jogo para quando estão entediados e o nomearam de:",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+          "Lazyball",
+          "Funball",
+          "Dunderball",
+          "Hateball"
         ]
       }
     ],
@@ -64,5 +209,19 @@
         "success": "#11A718"
       },
       "borderRadius": "4px"
-    }
+    },
+    "mensagemResultado" : [
+      "https://64.media.tumblr.com/51bfd54b453e3c6d77ec4edac5e6c207/tumblr_pjuj3f47Fm1wvvyspo3_r1_540.gif",
+      "https://64.media.tumblr.com/dc259be1678e55528838c90a3800e00f/tumblr_pp20s6nzyy1vxvkg1o1_400.gif",
+      "https://64.media.tumblr.com/26bd8959514943cf590c8dba9b56fb7d/406253ddf7701e37-66/s540x810/5bb01c83eeef7b49cf0a495fa4c3e01d818a91f4.gif",
+      "https://64.media.tumblr.com/eddbb78721994b044692e1e5ba31e387/tumblr_pxt7icrrNE1yr92hjo10_540.gif",
+      "https://64.media.tumblr.com/11f0a153a29379d25a800217c15e35a1/c552579f3bf60d66-38/s540x810/4fd6da97136ee46c0da9529211f3a112edd286c3.gif",
+      "https://64.media.tumblr.com/03d5e87644f94bd6e9b880eb0b70d938/tumblr_pe6gnlMQTZ1wopxpho2_540.gif",
+      "https://64.media.tumblr.com/f1138b6ae6fcfbec2c39330b191c4f42/tumblr_oqdo2dPYnu1sk5fh0o7_500.gif",
+      "https://64.media.tumblr.com/a0ebb3e6da9477fb50fc54a55a63c79d/d0a8f04fdfd42d27-e5/s540x810/2e6b0b8bc210f22fd1a3df00b02f1dbb1aef12f5.gif",
+      "https://64.media.tumblr.com/cbbbf8c554d5993256ba2919cb4aef77/tumblr_p7q1rrWczx1qhjvxzo3_400.gif",
+      "https://64.media.tumblr.com/65e42d2259682d61fff5463bb03a3158/465744a306907ae1-fd/s540x810/30171497032c1f2103b1b2584ece89bf32078f58.gif",
+      "https://64.media.tumblr.com/c67ba05f875a67e6c52aa787b7a6405a/tumblr_p7q1rrWczx1qhjvxzo1_400.gif"
+    ]
+    
   }
