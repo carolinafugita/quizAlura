@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 
 import db from '../db.json';
@@ -8,14 +9,14 @@ import QuizBackground from '../src/components/QuizBackground'
 import QuizContainer from '../src/components/QuizContainer'
 import GitHubCorner from '../src/components/GitHubCorner'
 import Question from './question'
+import Button from '../src/components/Button'
 
 const qtdQuestions = db.questions.length;
-const mensagemResultado = db.mensagemResultado;
 
 function FimQuiz (props) {
 
   const endPercentage = props.acertos / qtdQuestions;
-  const resultado = mensagemResultado[Math.floor(endPercentage*10)];
+  const result = getResult(endPercentage);
 
   return(
     <Widget>
@@ -30,13 +31,17 @@ function FimQuiz (props) {
           height: '175px',
           objectFit: 'cover',
         }}
-        src={resultado}
+        src={result.image}
       />
 
       <Widget.Content>
-
+        <h1>{result.message}</h1>
+        <p> </p>      
+        <Button onClick = {props.onClick}>
+          Voltar
+        </Button>
       </Widget.Content>
-
+      
     </Widget>
   )
 }
@@ -45,6 +50,8 @@ export default function QuizPage () {
     
     const [statusQuiz,setStatusQuiz] = React.useState ("QUIZ");
     const [acertos,setAcertos] = React.useState (0);
+    const router = useRouter ();
+    
 
     function countAcertos (isCorrect){
       if(isCorrect){
@@ -54,6 +61,11 @@ export default function QuizPage () {
 
     function endOfQuiz (){
       setStatusQuiz("FIM");
+    }
+
+    function goBack (e) { 
+      e.preventDefault ();
+      router.push( '/' )
     }
 
     return (
@@ -72,6 +84,7 @@ export default function QuizPage () {
           {statusQuiz === "FIM" &&
             <FimQuiz
               acertos = {acertos}
+              onClick = {goBack}
             /> }
 
         </QuizContainer>
@@ -80,3 +93,22 @@ export default function QuizPage () {
     );
 }
 
+function getResult(percentage){
+  var iImg = Math.floor(percentage*10);
+  var iMsg = -1;
+  
+  if( iImg < 5 ){
+    iMsg = 0;
+  }
+  else if( iImg < 7 ){
+    iMsg = 1;
+  }
+  else {
+    iMsg = 2;
+  }
+
+  return {
+    image : db.result.image[iImg],
+    message : db.result.message[iMsg]
+  };
+}
