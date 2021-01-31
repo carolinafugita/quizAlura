@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+
 import Head from 'next/head'
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget'
@@ -33,9 +34,17 @@ export default function Home () {
         <title>Quiz The Office</title>
       </Head>
       <QuizContainer>
-        <QuizLogo />
 
-        <Widget>
+        <Widget
+          as = {motion.section}
+          transition = {{ duration : 0.7 }}
+          variants = {{
+            show : { opacity : 1, y: '0' },
+            hidden : { opacity : 0, y : '100%' }
+          }}
+          initial = "hidden"
+          animate = "show"
+        >
 
           <Widget.Header>
             <h1>{db.title}</h1>
@@ -48,14 +57,26 @@ export default function Home () {
                 onChange = { pegarNome }
                 placeholder = "Nome"
               />
-              <Button type = "submit" disabled = { name.length === 0 }>
+              <Button
+                type = "submit"
+                disabled = { name.length === 0 }
+              >
                 Jogar
               </Button>
             </form>
           </Widget.Content>
         </Widget>
 
-        <Footer />
+        <Footer 
+          as = {motion.section}
+          transition = {{ delay : 0.2, duration : 0.7 }}
+          variants = {{
+            show : { opacity : 1, y: '0' },
+            hidden : { opacity : 0, y : '100%' }
+          }}
+          initial = "hidden"
+          animate = "show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/carolinafugita" />
     </QuizBackground>

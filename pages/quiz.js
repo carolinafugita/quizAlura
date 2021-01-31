@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget'
@@ -13,13 +13,43 @@ import Button from '../src/components/Button'
 
 const qtdQuestions = db.questions.length;
 
+function Loading () {
+  return (
+    <Widget
+        as = {motion.section}
+        transition = {{ duration : 2 }}
+        variants = {{
+          hidden : { opacity : 0},
+          show : { opacity : 1 }
+        }}
+        initial = "hidden"
+        animate = "show"
+      >
+      <Widget.Header>
+        <h1>Carregando...</h1>
+
+      </Widget.Header>
+    </Widget>
+  )
+}
+
 function FimQuiz (props) {
 
   const endPercentage = props.acertos / qtdQuestions;
   const result = getResult(endPercentage);
 
   return(
-    <Widget>
+    <Widget
+      as = {motion.section}
+      transition = {{ duration : 0.7 }}
+      variants = {{
+        show : { opacity : 1, y: '0' },
+        hidden : { opacity : 0, y : '100%' }
+      }}
+      initial = "hidden"
+      animate = "show"
+    >
+
       <Widget.Header>
         <h1>Você acertou {(endPercentage*100).toFixed(0)}% das perguntas!</h1>
       </Widget.Header>
@@ -48,9 +78,15 @@ function FimQuiz (props) {
 
 export default function QuizPage () {
     
-    const [statusQuiz,setStatusQuiz] = React.useState ("QUIZ");
+    const [statusQuiz,setStatusQuiz] = React.useState ("LOAD");
     const [acertos,setAcertos] = React.useState (0);
     const router = useRouter ();
+
+    React.useEffect( () => {
+      setTimeout( () => {
+        setStatusQuiz("QUIZ");
+      }, 2 * 1000)
+    }, []);
     
 
     function countAcertos (isCorrect){
@@ -74,6 +110,10 @@ export default function QuizPage () {
           <title>Quiz The Office</title>
        </Head>
         <QuizContainer >
+
+        {statusQuiz === "LOAD" &&
+            <Loading
+            /> }
 
           {statusQuiz === "QUIZ" &&
             <Question

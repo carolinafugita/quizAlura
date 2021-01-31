@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget'
 import Button from '../src/components/Button'
 import AlternativesForm from '../src/components/AlternativesForm'
 
-const qtdQuestions = db.questions.length;
+const qtdQuestions = db.questions.length,
+      randomQuestions = shuffle(db.questions);
+
 
 function Question (props) {
 
   const [index,setIndex] = React.useState (0);
-  const question = db.questions[index];
+  const question = randomQuestions[index];
   const isDone = index === db.questions.length -1;
   const [isAltSelected,setIsAltSelected] = React.useState(false);
   const [altSelected,setAltSelected] = React.useState (undefined);
@@ -36,6 +38,7 @@ function Question (props) {
 
   return (
     <Widget>
+
       <Widget.Header>
         <h1>Pergunta {index +1} de {qtdQuestions}</h1>
       </Widget.Header>
@@ -50,7 +53,16 @@ function Question (props) {
         src={question.image}
       />
     
-      <Widget.Content>
+      <Widget.Content
+        as = {motion.section}
+        transition = {{ duration : 1 }}
+        variants = {{
+          show : { opacity : 1 },
+          hidden : { opacity : 0 }
+        }}
+        initial = "hidden"
+        animate = "show"
+      >
         <h1>{question.title}</h1>
         <p>{question.description}</p>
 
@@ -98,3 +110,18 @@ function Question (props) {
 }
 
 export default Question;
+
+function shuffle (array){
+  
+  var aux, random;
+
+  for(let i = array.length -1; i >= 0; i--){
+    random = Math.floor(Math.random() * (i));
+
+    aux = array[random];
+    array[random] = array[i];
+    array[i] = aux; 
+  }
+
+  return array;
+}
